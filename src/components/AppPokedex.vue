@@ -8,26 +8,24 @@ export default {
 </script>
 <template lang="">
     <div>
-        Pokedex
-        <AppPokedexScreen />
         <div class="background">
             <div class="container">
                 <div class="row">
                     <div class="col">
                         <div class="console">
                             <div class="buttons">
-
                             </div>
                             <div class="buttons">
-
+                                
                             </div>
                             <div class="buttons">
-
+                                
                             </div>
                             <div class="buttons">
-
+                                
                             </div>
                         </div>
+                        <AppPokedexScreen />
                     </div>
                 </div>
             </div>
@@ -35,10 +33,10 @@ export default {
     </div>
 </template>
 <style lang="scss" scoped>
-    
     .background{
         height: 100vh;
         background-color: rgb(183, 27, 27);
+        padding-bottom: 25px;
         .console{
             display: flex;
             .buttons{
