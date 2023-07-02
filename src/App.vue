@@ -14,6 +14,7 @@ export default {
   mounted(){
     axios.get(store.api).then((response) =>{
       store.pokemonList= response.data.docs;
+      store.loading= false;
     })
   }
 }
@@ -24,6 +25,5 @@ export default {
   </div>
 </template>
 <style lang="scss">
-  
   @use './styles/generals.scss' as *;
 </style>
